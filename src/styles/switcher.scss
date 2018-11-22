@@ -1,0 +1,115 @@
+.switches {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 35.3vw;
+    z-index: 1;
+
+    @media screen and (min-width: 900px) {
+        height: 17.65vw;
+    }
+
+    .switches__angles {
+        height: 89px;
+        position: absolute;
+        width: 90%;
+        top: 50%;
+        transform: translateY(-45px);
+        left: 5%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (min-width: 900px) {
+            width: 52%;
+            height: 89px;
+            position: absolute;
+            top: 4.73vw;
+            left: 24%;
+            margin-top: 0;
+            transform: none;
+        }
+    }
+
+    .switches__angle {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        cursor: pointer;
+
+        @media screen and (min-width: 900px) {
+            width: 65px;
+            height: 65px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: $bg;
+            border-radius: 6px;
+            height: 100%;
+            width: 9.23%;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: $bg;
+            border-radius: 6px;
+            width: 100%;
+            height: 9.23%;
+        }
+
+        &.switches__angle--left{
+            transform: rotate(45deg)
+        }
+        &.switches__angle--right {
+            transform: rotate(225deg)
+        }
+
+    }
+
+    .switches__dots {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        @media screen and (min-width: 900px) {
+            height: 31px;
+        }
+
+        .switches__dot {
+            width: 10px;
+            height: 10px;
+            background: $darkblue;
+            cursor: pointer;
+            border-radius: 50%;
+            margin: 0 3px 0 3px;
+
+            @media screen and (min-width: 900px) {
+                width: 15px;
+                height: 15px;
+                margin: 0 6px 0 6px;
+            }
+
+            &:hover {
+                opacity: 0.7;
+            }
+            &.switches__dot--active {
+               background: $bg;
+            }
+        }
+    }
+
+}

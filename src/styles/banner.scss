@@ -1,0 +1,31 @@
+.banner {
+    width: 100%;
+    overflow: hidden;
+    background: $herogradient;
+    position: relative;
+    .banner__slider {
+        display: flex;
+        position: relative;
+        width: 300vw;
+        transition: left 400ms;
+        left: 0;
+        top: 0;
+        will-change: left;
+    }
+    .banner__item {
+        overflow: hidden;
+        width: 100vw;
+        height: 35.3vw;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: transform 100ms ease;
+        transform: scale(1);
+        @media screen and (min-width: 900px) {
+            height: 17.65vw;
+        }
+        &.banner__item--slide-fail {
+            transform: scale(1.05);
+        }
+    }
+}

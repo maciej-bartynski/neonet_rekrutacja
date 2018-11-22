@@ -1,0 +1,18 @@
+//nie zmieniać kolejności poniższy importów
+@import './styles/general/vars.scss';
+@import './styles/general/mixes.scss';
+//można zmieniać kolejność poniższych importów
+@import './styles/banner.scss';
+@import './styles/switcher.scss';
+@import './styles/promo-steps.scss';
+@import './styles/promo-articles.scss';
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    //overflow:hidden;
+    min-height: 100vh;
+}

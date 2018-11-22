@@ -1,0 +1,120 @@
+.articles-wrapper {
+    width: 100%;
+    margin: 50px auto 0 auto;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and (min-width: 1200px){
+        width: 1083px;
+        justify-content: space-between;
+        margin: 106px auto 0 auto;
+    }
+
+}
+
+.promo-tilt {
+    width:100%;
+    margin: 0 0 70px 0;
+    @media screen and (min-width: 500px){
+        width:422px;
+    }
+
+    .promo-tilt__title {
+        width: 100%;
+        padding: 0;
+        color: $darkblue;
+        @include post-title;
+        font-size: 15px;
+        text-align: center;
+        margin: 0;
+        @media screen and (min-width: 500px) {
+            @include post-title;
+        }
+    }
+
+    .promo-tilt__title--bg {
+        background: $darkblue;
+        color: $bg;
+        @include post-title-b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+        font-size: 12px;
+        @media screen and (min-width: 500px) {
+            width: 324px;
+            height: 55px;
+            padding: 0;
+            @include post-title-b;
+        }
+        margin: 0 auto;
+        margin-top: 21px;
+    }
+
+    .promo-tilt__img-container {
+        width: 100%;
+        padding: 0 25px;
+        margin-top: 44px;
+        position: relative;
+        height: 251px;
+        .promo-tilt__img-item {
+            position: absolute;
+            width: 179px;
+            height: 223px;
+        }
+
+        .promo-tilt__img-item--left {
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        .promo-tilt__img-item--center {
+            top: 28px;
+            left: 50%;
+            margin-left: -89.5px;
+            z-index: 3;
+        }
+        .promo-tilt__img-item--right {
+            top: 0;
+            right: 0;
+            z-index: 2;
+        }
+    }
+    .promo-tilt__btn-container {
+        width: 90%;
+        @media screen and (min-width: 300px){
+            width: 248px;
+        }
+        height: 45px;
+        border-radius: 22.5px;
+        color: $bg;
+        @include button;
+        background: $buttongradient;
+        margin: 33px auto 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        &:hover {
+            background: $buttongradienthover;
+        }
+    }
+}
+.promo-tilt--right {
+    .promo-tilt__img-container {
+        .promo-tilt__img-item {
+            width: 248px;
+            height: 247px;
+        }
+    }
+    .promo-tilt__btn-container {
+        
+        color: $darkblue;
+        border: solid 3px $darkblue;
+        background: $bg;
+        &:hover {
+            background: $buttongradienthover--right;
+        }
+    }
+}

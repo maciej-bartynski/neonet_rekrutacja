@@ -1,0 +1,49 @@
+@mixin head-font {
+    font-family: $arial;
+    font-size: 16.03px;
+    line-height: 18.31px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $bg;
+    
+}
+
+@mixin head-number {
+    font-family: $arial;
+    font-size: 49.11px;
+    letter-spacing: 0;
+    line-height: 56.8px;
+    color: $bg;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+}
+
+@mixin post-title {
+    font-family: $arial;
+    font-size: 31.96px;
+    line-height: 36.5px;
+    text-transform: uppercase;
+    color: $darkblue;
+    font-weight: 400;
+}
+
+@mixin post-title-b {
+    font-family: $arial;
+    font-size: 31.96px;
+    line-height: 36.5px;
+    text-transform: uppercase;
+    color: $bg;
+    font-weight: 400;
+}
+
+@mixin button {
+    font-family: $arial;
+    font-size: 16px;
+    line-height: 3.42px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+}
