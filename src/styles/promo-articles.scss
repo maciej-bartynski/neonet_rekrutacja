@@ -60,8 +60,12 @@
         height: 251px;
         .promo-tilt__img-item {
             position: absolute;
-            width: 179px;
-            height: 223px;
+            width: 80%;
+            height: auto;
+            @media screen and (min-width: 190px){
+                width: 179px;
+                height: 223px;
+            }
         }
 
         .promo-tilt__img-item--left {
@@ -104,8 +108,12 @@
 .promo-tilt--right {
     .promo-tilt__img-container {
         .promo-tilt__img-item {
-            width: 248px;
-            height: 247px;
+            width: 70%;
+            height: auto;
+            @media screen and (min-width: 260px) {
+               width: 248px;
+               height: 247px;
+            }
         }
     }
     .promo-tilt__btn-container {

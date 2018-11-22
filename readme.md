@@ -17,7 +17,9 @@ Opcje slidera:
 
 Rozwój strony:
 W przypadku dodania kolejnych zdjęć do slidera, ilość kropek zaktualizuje się.
-Slider działa z każdą ilością zdjęć. 
+Slider działa z każdą ilością zdjęć.
+URL zdjęć wprowadzany jest inline, z uwagi na ewentualne użycie funkcji PHP
+w systemach CMS (np Wordpress); 
 
 Przyciski: 
 -reagowanie na zdarzenie mouseover
