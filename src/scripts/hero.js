@@ -20,6 +20,7 @@ export class HeroSlider {
             this.slide()
         }, this.timeBetweenSlides);
 
+        this.printBanner();
         this.printDots();
         this.angleClick(-1);
         this.angleClick(1);
@@ -103,6 +104,10 @@ export class HeroSlider {
             this.dots[i].classList.remove('switches__dot--active');
         }
         this.dots[this.currentPositionIndex * -1].classList.add('switches__dot--active');
+    }
+
+    printBanner(){
+        this.slider.style.width = `${this.slidePositions*100}vw`;
     }
 
     printDots() {
